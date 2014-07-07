@@ -1,0 +1,33 @@
+{
+  "name": "solo-bracket-manager",
+  "version": "0.0.0",
+  "description": "Application to give a solo ranking in a team game.",
+  "main": "index.html",
+  "scripts": {
+    "test": "Test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SlimBean/solo-bracket-manager.git"
+  },
+  "keywords": [
+    "Poker",
+    "game",
+    "tournament",
+    "bracket",
+    "generator",
+    "solo"
+  ],
+  "author": "Shaun Bulbrook",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/SlimBean/solo-bracket-manager/issues"
+  },
+  "dependencies": {
+    "less": "~1.7.3",
+    "grunt": "~0.4.5"
+  }
+}
