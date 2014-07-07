@@ -1,7 +1,26 @@
 module.exports = function(grunt) {
 
-	//Build me my LESS
-	grunt.registerTask('default', 'Style me up bro!', funtion() {
-		grunt.log.write('OK Bro! Let me fetch your hat!.....').ok();
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+		uncss: {
+			dist: {
+				src: ['src/index.html', 'src/index.html'],
+			    dest: 'dist/css/tidy.css',
+			    options: {
+			    	report: 'min' // optional: include to report savings
+			    }
+			}
+		}
 	});
+
+	//load
+	grunt.loadNpmTasks('grunt-uncss');
+	
+	//tasks
+	grunt.registerTask('default',['uncss']);
+	grunt.registerTask('build', function() {
+
+	});
+
+
 }
